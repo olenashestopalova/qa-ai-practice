@@ -18,3 +18,9 @@ pip install -r requirements.txt
 ```bash
 pytest
 ```
+## Current coverage
+
+- GET /products/{id}
+- Positive and negative product ID scenarios
+- Boundary value checks
+- Basic response validation
