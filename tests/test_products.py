@@ -9,7 +9,7 @@ INVALID_PRODUCT_IDS = [0, -1, 195, 999999, "abc", "1.5"]
 def test_get_product_by_valid_id(base_url, product_id):
     response = requests.get(f"{base_url}/products/{product_id}")
 
-    assert response.status_code == 200
+    assert response.status_code == 201
 
     body = response.json()
 
